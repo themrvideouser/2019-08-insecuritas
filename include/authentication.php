@@ -6,14 +6,14 @@ function authenticate($user, $password)
 {
     $usersAndPasswords = getUsersAndPasswords();
 
-    if($user) {
+    if($user==1) {
         if (!array_key_exists($user, $usersAndPasswords) || $usersAndPasswords[$user] != $password) {
             return false;
         } else {
             return true;
         }
     } else {
-        return true;
+        return false;
     }
 }
 
