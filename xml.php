@@ -19,7 +19,7 @@ if (isset($_POST['upload'])||isset($_FILES['xmlfile'])) {
 ?>
 <html lang="en">
 <head>
-    <title>License Processing &ndash Insecuritas</title>
+    <title>License Processing &ndash; Insecuritas</title>
     <?php require_once "include/common_head.php"; ?>
 </head>
 <body>
