@@ -1,4 +1,6 @@
-<?php ?>
+<?php
+session_start();
+?>
     <html lang="en">
     <head><title>Main Menu &ndash; Insecuritas</title>
         <?php
@@ -9,10 +11,7 @@
         ?>
     </head>
 
-    </html>
-
 <?php
-session_start();
 if (isset($_POST['logout'])) {
     session_destroy();
     header("Location: index.php");
@@ -47,3 +46,5 @@ if (isset($_POST['logout'])) {
     You are not logged in. <a href="index.php">Go back.</a>
     <?php
 }
+?>
+    </html>
