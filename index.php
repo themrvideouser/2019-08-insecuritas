@@ -34,7 +34,7 @@ if (isset($_SESSION['authenticated_user'])) {
 <body>
 <h1>Login</h1>
 <?php if ($permissionDenied) { ?>
-    <div style="background: red;">
+    <div style="background: cyan;">
         Zugriff verweigert.
     </div>
 
